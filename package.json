@@ -6,17 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/timamero/static-site-project_sushi-restaurant.git"
-  },
+  // "repository": {
+  //   "type": "git",
+  //   "url": "git+https://github.com/timamero/static-site-project_sushi-restaurant.git"
+  // },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/timamero/static-site-project_sushi-restaurant/issues"
-  },
-  "homepage": "https://github.com/timamero/static-site-project_sushi-restaurant#readme",
+  // "bugs": {
+  //   "url": "https://github.com/timamero/static-site-project_sushi-restaurant/issues"
+  // },
+  // "homepage": "https://github.com/timamero/static-site-project_sushi-restaurant#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1"
   }
