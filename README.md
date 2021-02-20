@@ -1,4 +1,5 @@
 # Mock Restaurant Website
+[![Netlify Status](https://api.netlify.com/api/v1/badges/50bd0915-6d72-4e68-a740-9cca5e2861f6/deploy-status)](https://app.netlify.com/sites/timamero-mock-rest/deploys)
 
  - HTML
  - CSS
