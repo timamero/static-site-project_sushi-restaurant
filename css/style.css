@@ -44,7 +44,7 @@ h1, h2, h3, a, p {
 }
 
 
-h1, h2, h3, a {
+h1, h2, h3, a, #submit {
   text-transform: uppercase;
   font-family: 'Tienne', serif;
 }
@@ -64,8 +64,12 @@ h3 {
 
 
 
-p, li {
+p, li, label, input, textarea {
   font-family: 'Montserrat', sans-serif;
+}
+
+a, button {
+  cursor: pointer;
 }
 
 a {
@@ -116,11 +120,13 @@ img {
 .logo {
   margin: 0px 16px;
   font-size: 1.5em;
+  transition: background-color 0.75s, color 0.75s;
 }
 
 .nav-link {
   padding-left: 16px;
   padding-right: 16px;
+  transition: background-color 1s, color 1s;
 }
 
 .logo:hover, .nav-link:hover {
@@ -193,6 +199,7 @@ img {
   padding: 8px;
   background-color: black;
   border: 1px dashed black;
+  transition: border 1s, color 1s;
 }
 
 .features.links a:hover .innerbox {
@@ -214,6 +221,7 @@ img {
   padding: 8px;
   background-color: white;
   border: 1px dashed white;
+  transition: border 1s, color 1s;
 }
 
 .features.info a:hover .innerbox-light {
@@ -253,6 +261,37 @@ img {
     height: 248px;
     object-fit: cover;
     margin: 4px auto;
+}
+
+.form-inputs {
+  display: grid;
+  grid-template-columns: 80px 240px;
+  row-gap: 4px;
+  width: min-content;
+  margin: 0px auto;
+}
+
+.btn-wrapper {
+  width: 320px;
+  margin: 16px auto;
+}
+
+input, label {
+  padding: 8px 0px;
+}
+
+#submit {
+  /* margin-left: 32px; */
+  width: inherit;
+  height: 40px;
+  background-color: #C92C2C;
+  border: none;
+  transition: background-color 0.75s, color 0.75s;
+}
+
+#submit:hover {
+  background-color: dimgray;
+  color: white;
 }
 
 /*Add responsiveness for max-height*/
@@ -298,6 +337,7 @@ img {
     padding-left: 16px;
     padding-right: 16px;
     z-index: 1;
+
   }
   
   .dropdown-content .nav-link {
@@ -339,6 +379,10 @@ img {
   .galleryphoto {
     width: 150px;
     height: 150px;
+  }
+
+  .form-inputs, .btn-wrapper {
+    margin: 16px 32px;
   }
 
 }

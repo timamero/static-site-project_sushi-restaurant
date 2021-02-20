@@ -105,15 +105,20 @@
         <section class="col-container bg-dark" id="contact-section">	
             <h2 class="light-text">Contact Us</h2>
             <form class="light-text" id="contactform">
-                <label id="label-name" for="name">Name: </label>
-                <input id="name" type="text" placeholder="Name" required>
-                <label id="label-phone" for="phone">Phone: </label>
-                <input id="phone" type="text" placeholder="Phone">
-                <label id="label-email" for="email">E-mail</label>
-                <input id="email" type="email" placeholder="Email" required>
-                <label for="label-message" for="message">Message</label>
-                <textarea id="message">Enter message here</textarea>
-                <button id="submit" type="submit">Send</button>
+                <div class="form-inputs">
+                    <label id="label-name" for="name">Name: </label>
+                    <input id="name" type="text" placeholder="Name" required>
+                    <label id="label-phone" for="phone">Phone: </label>
+                    <input id="phone" type="text" placeholder="Phone">
+                    <label id="label-email" for="email">E-mail:</label>
+                    <input id="email" type="email" placeholder="Email" required>
+                    <label for="label-message" for="message">Message:</label>
+                    <textarea id="message">Enter message here</textarea>
+                </div>
+                <div class="btn-wrapper">
+                    <button id="submit" type="submit">Send</button>
+                </div>
+                
             </form>	
         </section>
 
@@ -121,7 +126,7 @@
 
 	<footer class="bg-dark">
 
-        <ul>
+        <ul class="social">
             <li><a href="#"><i class="fab fa-yelp"></i></a></li>
             <li><a href="#"><i class="fab fa-facebook"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
