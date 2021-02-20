@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Tienne:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+/* Notes
+Add transition times to hover effects
+
+*/
+
+/*****Global*****/
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+  
+body {
+  margin: 0px;
+  background-image: url(../images/sushi-bg-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-light {
+  background-color: rgba(255,255,255,0.75);
+}
+  
+.bg-dark {
+  background-color: black;
+  /* background-color: rgba(31, 27, 27, 0.9); */
+}
+
+.height-full {
+  height: 100vh;
+}
+
+.height-med {
+  height: 60vh;
+}
+
+h1, h2, h3, a, p {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+
+h1, h2, h3, a, #submit {
+  text-transform: uppercase;
+  font-family: 'Tienne', serif;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+  padding-bottom: 16px;
+}
+
+h3 {
+  padding: 8px;
+}
+
+
+
+p, li, label, input, textarea {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.red-text {
+  color: #C92C2C;
+}
+
+.dark-text {
+  color: black;
+}
+
+.light-text {
+  color: whitesmoke;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+    margin: 0px;
+}
+
+/*****End Global*****/
+
+/*****Nav*****/
+.nav {
+  height: 56px;
+  width: 100%;
+}
+
+.nav-container {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+  width: inherit;
+  background-color: black;
+  box-shadow: 0px 3px 3px black;
+  line-height: 56px;
+}
+
+.logo {
+  margin: 0px 16px;
+  font-size: 1.5em;
+  transition: background-color 0.75s, color 0.75s;
+}
+
+.nav-link {
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: background-color 1s, color 1s;
+}
+
+.logo:hover, .nav-link:hover {
+  color: white;
+  border-top: 1px dashed white;
+  border-bottom: 1px dashed white;
+}
+
+
+
+/* Dropdown */
+.dropdown {
+  height: 100%;
+}
+
+.dropdown-content {  
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap; 
+  height: 80px;
+  background-color: inherit;
+  white-space: nowrap;
+}
+
+.nav-link, .logo {
+  display: block;
+  height: inherit;
+  background-color: inherit;
+}
+
+.dropbtn {  
+  display: none;  /* Button is hidden for large view */
+}
+/* Dropdown End*/
+
+/*****End Nav*****?
+
+/*****Main Global*****/
+.col-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col-container h2, .features.heading, .features.links, .features.info {
+  width:auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*****Main Sections*****/
+.features.heading {
+  /* margin: 0px 16px 80px 16px; */
+  margin-bottom: 80px;
+}
+
+.features.heading h1 span {
+  white-space: nowrap;
+}
+
+.features.links a .outerbox {
+  width: 248px;
+  margin: 16px 16px 16px 0px;
+  padding: 4px;
+  background-color: black;
+  text-align: center;
+}
+
+.features.links a .innerbox {
+  padding: 8px;
+  background-color: black;
+  border: 1px dashed black;
+  transition: border 1s, color 1s;
+}
+
+.features.links a:hover .innerbox {
+  border-top: 1px dashed white;
+  border-bottom: 1px dashed white;
+  color: white;
+}
+
+
+.features.info a .outerbox-light {
+  width: 248px;
+  margin: 16px 16px 16px 0px;
+  padding: 4px;
+  background-color: white;
+  text-align: center;
+}
+
+.features.info a .innerbox-light {
+  padding: 8px;
+  background-color: white;
+  border: 1px solid white;
+  transition: border 1s, color 1s;
+}
+
+.features.info a:hover .innerbox-light {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+.features.info ul, p, a .outerbox {
+  margin-left: 16px;
+  /* border: 2px dashed green; */
+}
+
+.features.info li{
+  width: 264px;
+}
+
+.features.info .time {
+  float: right;
+}
+
+#gallery-section h2, #contact-section h2 {
+  margin-top: 16px;
+}
+
+.features.gallery {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px auto 16px auto;
+}
+
+.galleryphoto {
+    width: 304px;
+    height: 248px;
+    object-fit: cover;
+    margin: 4px auto;
+    transition: transform 0.25s;
+}
+
+.galleryphoto:hover {
+  transform: scale(1.05);
+}
+
+.form-inputs {
+  display: grid;
+  grid-template-columns: 80px 240px;
+  row-gap: 4px;
+  width: min-content;
+  margin: 0px auto;
+}
+
+.btn-wrapper {
+  width: 320px;
+  margin: 16px auto;
+}
+
+input, label {
+  padding: 4px 0px;
+}
+
+#submit {
+  /* margin-left: 32px; */
+  width: inherit;
+  height: 32px;
+  background-color: #C92C2C;
+  border: none;
+  transition: background-color 0.75s, color 0.75s;
+}
+
+#submit:hover {
+  background-color: salmon;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 32px;
+  border-top: 2px dashed white;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  /* margin: auto; */
+}
+
+.social i:hover, .footer .mylogo:hover {
+  color: #C92C2C;
+}
+
+
+/*Add responsiveness for max-height*/
+
+@media (max-width: 760px) {  
+  /*Dropdown*/
+  .dropdown-content {
+    height: auto;
+  }
+  
+  .dropbtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+  }
+  
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    border: none;
+    outline: none;
+    padding: 0px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+ .nav-headerbar .nav-right nav-link:hover, .dropdown:hover .dropbtn {
+    color: white;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: black;
+    box-shadow: 0px 3px 3px black;
+    min-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    z-index: 1;
+
+  }
+  
+  .dropdown-content .nav-link {
+    float: none;
+    display: block;
+    min-width: inherit;
+    margin: 0 auto;
+  }
+  
+  .dropdown-content .nav-link:hover {
+    color: white;
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /*End Dropdown*/
+
+  /*Main*/
+  .col-container h2, .features.heading, .features.links, .features.info {
+    margin: 0px 16px 0px 16px;
+    /* width: auto; */
+  }
+
+  .features.heading {
+    margin: 0px 16px 80px 16px;
+  }
+
+  .features.info li{
+    width: 200px;
+  }
+
+  .features.gallery {
+    max-width: 580px;
+  }
+
+  .galleryphoto {
+    width: 150px;
+    height: 150px;
+  }
+
+  .form-inputs, .btn-wrapper {
+    margin: 16px 32px;
+  }
+
+  .footer {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+}
