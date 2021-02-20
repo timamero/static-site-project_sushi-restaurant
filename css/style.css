@@ -224,13 +224,13 @@ img {
 .features.info a .innerbox-light {
   padding: 8px;
   background-color: white;
-  border: 1px dashed white;
+  border: 1px solid white;
   transition: border 1s, color 1s;
 }
 
 .features.info a:hover .innerbox-light {
-  border-top: 1px dashed black;
-  border-bottom: 1px dashed black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   color: black;
 }
 
@@ -265,6 +265,11 @@ img {
     height: 248px;
     object-fit: cover;
     margin: 4px auto;
+    transition: transform 0.25s;
+}
+
+.galleryphoto:hover {
+  transform: scale(1.05);
 }
 
 .form-inputs {
@@ -294,7 +299,7 @@ input, label {
 }
 
 #submit:hover {
-  background-color: dimgray;
+  background-color: salmon;
   color: white;
 }
 
